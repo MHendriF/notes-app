@@ -7,16 +7,16 @@ function AddPage() {
     const navigate = useNavigate();
 
     function onAddContactHandler(contact) {
-        addContact(contact)
+        addContact(contact);
         navigate('/');
     }
-    
+
     return (
         <section>
-        <h2>Tambah kontak</h2>
-        <ContactInput addContact={onAddContactHandler} />
+            <h2>Tambah kontak</h2>
+            <ContactInput addContact={onAddContactHandler} />
         </section>
-    )
+    );
 }
- 
+
 export default AddPage;
